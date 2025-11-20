@@ -1,0 +1,536 @@
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.errMsg {
+	 color: #FC0202;
+	}
+body {
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgba(0, 0, 0, 0);
+ background-image: url("<?=ASSETS?>images/img/2.jpg") !important;
+  background-origin: padding-box;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #333;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+}
+input, select, textarea {
+	font-family: Arial;
+	font-size: 16px;
+	color: #333;
+}
+body {
+
+}
+img {
+	border: 0px;
+	display: block;
+	max-width: 100%;
+}
+a, input {
+	outline: none;
+	text-decoration: none;
+	transition: ease-in 0.3s;
+	-webkit-transition: ease-in 0.3s;
+}
+.clear {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+}
+ul, li {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	color: #591d70;
+	font-family: 'source_sans_proregular';
+}
+h2 {
+	font-size: 36px;
+}
+p {
+	line-height: 28px;
+}
+.wrapper {
+	width: 100%;
+}
+.main-wrapper {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 12px #107c3e;
+  display: table;
+  margin: 40px auto;
+  width: 85%;
+}
+.top-header {
+  display: inline-block;
+  margin: 15px 0;
+  text-align: center;
+  width: 100%;
+}
+.w3layouts-main {
+  float: left;
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 1em;
+  text-align: left;
+  width: 48%;
+}
+.full{ width:100% !important;}
+.w3layouts-main h2 {
+	margin-bottom: 0.4em;
+}
+.w3layouts-main h6 {
+	color: #fff;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	line-height: 1.9em;
+}
+.w3layouts-main p {
+	color: #fff;
+	font-size: 0.9em;
+	font-weight: 100;
+	letter-spacing: 1px;
+	line-height: 1.9em;
+	margin-top: 1.5em;
+}
+.banner-right-agile {
+  float: right;
+  margin: 0 auto;
+  min-height: 400px;
+  padding: 5px 52px;
+  width: 52%;
+}
+.fill-img {
+
+  display: inline-block;
+  height: auto;
+  padding: 6px;
+  width: 100%;
+}
+.auto-form p {
+	margin-bottom: 8px;
+}
+.w3layouts-main h2, .banner-right-agile h3 {
+	color: #fff;
+	font-family: "Play", sans-serif;
+	font-size: 2em;
+	letter-spacing: 2px;
+	margin-bottom: 1.1em;
+	text-transform: uppercase;
+}
+.auto-form > input[type="submit"] {
+  background-color: #30a670;
+  background-image: linear-gradient(to bottom, #30a670, #0b5c43);
+  border: medium none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 8px 7px;
+  width:auto;
+  float:right;
+}
+
+.submit-btn {
+  background-color: #30a670;
+  background-image: linear-gradient(to bottom, #30a670, #0b5c43);
+  border: medium none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 8px 7px;
+  width:auto;
+  float:right;
+}
+
+.logo-tp img {
+	margin: 0 auto;
+	text-align: center;
+}
+.auto-form p lable {
+	display: block;
+}
+.auto-form p input {
+	padding: 7px;
+	width: 100%;
+}
+.top-grid {
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+.w3layouts-main {
+	padding: 1em;
+}
+.banner-right-agile {
+	padding: 34px 47px;
+}
+body {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("img/2.jpg");
+  background-origin: padding-box;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  color: #333;
+  font-family: Arial;
+  font-size: 16px;
+  font-weight: normal;
+}
+.w3layouts-main {
+
+  width: 43%;
+}
+.banner-right-agile {
+
+  width: 36%;
+}
+}
+
+@media only screen and (max-width: 767px) {
+.wrapper {
+	width: none;
+}
+.main-wrapper {
+	width: 100%;
+}
+.auto-form p input {
+	display: inline;
+	padding: 7px;
+	width: 94%;
+}
+.top-grid {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 94%;
+}
+.w3layouts-main {
+	padding: 10px 5px;
+	width: 100%;
+	min-height: 307px;
+}
+.w3layouts-main h2, .banner-right-agile h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.fill-img {
+  margin-top: 36px;
+  padding: 11px;
+  width: 86%;
+}
+.fill-img {
+	border: 2px dotted #b1b1b1;
+}
+.banner-right-agile {
+	width: 100%;
+}
+.banner-text {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 94%;
+}
+.print {
+	width: 100%;
+}
+.auto-form > input[type="submit"] {
+	width: 100%;
+}
+.submit-btn {
+	width: 100%;
+}
+.banner-text {
+	margin-left: 10px;
+	margin-top: 10px;
+	width: 94%;
+}
+.banner-right-agile {
+  margin-top: 40px;
+  min-height: 307px;
+  padding: 0;
+  width: 100%;
+}
+body {
+	background: inherit !important;
+}
+}
+
+@media screen and (min-width: 360px) and (max-width: 640px) and (orientation: landscape) {
+.fill-img {
+	margin-top: 2px;
+	padding: 11px;
+	width: 92%;
+}
+.auto-form p input {
+	display: inline;
+	padding: 7px;
+	width: 97%;
+}
+.banner-right-agile {
+  padding-top: 20px;
+  min-height: 307px
+  width: 100%;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+.fill-img {
+	margin-top: 2px;
+	padding: 11px;
+	width: 91%;
+}
+
+}
+.mb10 {
+	margin-bottom : px;
+	}
+	
+.g-recaptcha {transform:scale(0.85); transform-origin:0 0;}		
+</style>
+
+
+<script type='text/javascript' src='https://s3-us-west-2.amazonaws.com/res.applicantstarter.com/js/plugins/fullcalendar/fullcalendar.min.js'></script>
+<script type='text/javascript' src='https://s3-us-west-2.amazonaws.com/res.applicantstarter.com/js/plugins/jquery/jquery-ui-timepicker-addon.js'></script>
+<link href="https://s3-us-west-2.amazonaws.com/res.applicantstarter.com/css/fullcalendar/fullcalendar_shaw_version.css" rel="stylesheet" type="text/css" />
+<div class="wrapper">
+  <div class="main-wrapper">
+    <div class="top-header">
+      <div class="logo-tp"><img src="<?=ASSETS?>images/img/logo-sign.png"></div>
+    </div>
+    <div class="top-grid">
+      <div class="w3layouts-main">
+    
+        <div class="fill-img"><img src="<?=site_url().$form_data->original_form_image?>"></div>
+      </div>
+      <div class="banner-right-agile">
+        <div class="banner-text">
+           <!--<form class="auto-form" id="form1" action="<?=site_url()?>forms/capture_form" enctype="multipart/form-data" method="post">-->
+           <form class="auto-form" id="form1" action="<?=site_url()?>forms/save_form" enctype="multipart/form-data" method="post">
+            <p><?php if(!empty($message)){ ?> <span class="errMsg"><?=$message?></span>  <?php } ?></p>
+            <div class="row mt15">
+			 <div class="col-md-12">		
+			  <div class="col-md-4">Last Name<span style="color:red;">*</span> </div>	
+              <div class="col-md-8">
+              <input type="text" class="form-control validate[required]" value="" name="last_name" id="last_name" placeholder=''	autocomplete="off"/>
+              </div>	
+              </div>	
+            </div>
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">First Name<span style="color:red;">*</span> </div>
+              <div class="col-md-8">
+              <input type="text" class="form-control validate[required]" value="" name="first_name" id="first_name" placeholder=''	autocomplete="off" /></div>
+             </div>	
+            </div>
+            
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">Middle Initial</div>
+              <div class="col-md-8">
+              <input type="text" class="form-control" value="" name="middle_initial" id="middle_initial" placeholder=''	autocomplete="off" /></div>
+             </div>	
+            </div>
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">Other Last Name</div>
+              <div class="col-md-8">
+              <input type="text" class="form-control" value="" name="other_last_name" id="other_last_name" placeholder=''	autocomplete="off" /></div>
+             </div>	
+            </div>
+             <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">Address<span style="color:red;">*</span> </div>
+              <div class="col-md-8">
+                <textarea class="form-control validate[required]" value="" name="address" id="address" placeholder='Name and street'></textarea>
+              </div>
+             </div>	
+            </div>
+            
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">Apt. Number<span style="color:red;">*</span> </div>
+              <div class="col-md-8">
+              <input type="text" class="form-control validate[required]" value="" name="apt_number" id="apt_number" placeholder=''	autocomplete="off" /></div>
+             </div>	
+            </div>
+            
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">City<span style="color:red;">*</span> </div>
+              <div class="col-md-8">
+              <input type="text" class="form-control validate[required]" value="" name="city" id="city" placeholder=''	autocomplete="off" /></div>
+             </div>	
+            </div>
+             <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">State<span style="color:red;">*</span> </div>
+              <div class="col-md-8">
+              <input type="text" class="form-control validate[required]" value="" name="state" id="state" placeholder=''	autocomplete="off" /></div>
+             </div>	
+            </div>
+            
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">ZIP Code<span style="color:red;">*</span> </div>
+              <div class="col-md-8">
+              <input type="text" class="form-control validate[required]" value="" name="ZIP_code" id="ZIP_code" placeholder=''	autocomplete="off" /></div>
+             </div>	
+            </div>
+            
+             <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">DOB<span style="color:red;">*</span> </div>
+              <div class="col-md-8">
+              
+                    
+							   <select name="DOB[]" class="<?=$validation?>">
+							     <option value=" " selected>Month</option>
+							     <?php 
+							       for($i=1; $i<= 12; $i++)
+							       {
+								      echo "<option value='$i'>$i</option>";
+								   }
+							     ?>
+							   </select>
+							  
+							  
+							    <select name="DOB[]" class="<?=$validation?>">
+							     <option value=" ">Date</option>
+							     <?php 
+							       for($i=1; $i<= 31; $i++)
+							       {
+								      echo "<option value='$i'>$i</option>";
+								   }
+							     ?>
+							   </select>
+							  
+							  
+							    <select name="DOB[]" class="<?=$validation?>">
+							     <option value=" ">Year</option>
+							     <?php 
+							       $year_range  = range(1970,date('Y'));
+							       for($i=0; $i<= count($year_range); $i++)
+							       {
+								      echo "<option value='".$year_range[$i]."'>".$year_range[$i]."</option>";
+								   }
+							     ?>
+							   </select>
+							 
+                 
+              </div>
+             </div>	
+            </div>
+            
+             <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">US SSN<span style="color:red;">*</span> </div>
+              <div class="col-md-8"><input type="text" class="form-control validate[required]"  value=""  id="US_SSN"  name="US_SSN"  placeholder='' autocomplete="off" /></div>
+             </div>
+            </div>
+            
+             <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">Email<span style="color:red;">*</span> </div>
+              <div class="col-md-8"><input type="text" class="form-control validate[required,custom[email]]"  value=""  id="email"  name="email"  placeholder='' autocomplete="off" /></div>
+             </div>
+            </div>
+            
+             <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">Phone<span style="color:red;">*</span> </div>
+              <div class="col-md-8"><input type="text" class="form-control validate[required]"  value=""  id="phone"  name="phone"  placeholder='' autocomplete="off" /></div>
+             </div>
+            </div>
+           
+            
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <span style="font-size:11px;font-weight:bold;">I attest, under penalty of perjury, that I am (check one of the following boxed):</span>
+             </div>
+            </div>
+            <div class="row mt15">
+			   <div class="col-md-12">	
+                <input type="radio" class="cws-normal" value="citizen_us" name="penalty_of_perjury"> 1.A citizen of the United States 
+               </div>
+                <div class="col-md-12">	
+                <input type="radio" class="cws-normal" value="noncitizen_us" name="penalty_of_perjury"> 2.A noncitizen national of the United States
+               </div>
+                <div class="col-md-12">	
+                <input type="radio" class="cws-normal" value="lawful_per_res" name="penalty_of_perjury"> 3.A lawful permanent resident
+               </div>
+                <div class="col-md-12">	
+                <input type="radio" class="cws-normal" value="alien_authorized" name="penalty_of_perjury"> 4.An alien authorized to work
+               </div>
+            </div>
+            
+            <div class="row mt15">
+			  <div class="col-md-12">	
+              <div class="col-md-4">Date<span style="color:red;">*</span> </div>
+              <div class="col-md-8"><input type="text" class="form-control validate[required] datepicker"  value=""  id="date"  name="date"  placeholder='Date' autocomplete="off" /></div>
+            </div>
+            </div>
+<!--
+            <div class="row mt15">
+			<div class="col-md-12">
+              <div class="col-md-4">Signature</div>
+              <div class="col-md-8"> <input name="file" type="file" class="form-control full" id="upload" placeholder="Agent Signature" multiple  style="width:60%"/>
+             <span style="color:blue; font-size:10px;">Upload signature image</span>
+               </div>
+               </div>
+            </div>
+-->
+            <div class="row mt15" >
+			<div class="col-md-12">	
+			  <div class="col-md-4">&nbsp;</div>	
+              <div class="col-md-8">
+                 <div class="g-recaptcha" data-sitekey="<?=CAPTCHA_SITE_KEY?>"></div>
+              </div>
+            </div>
+            </div>
+            <div class="row mt15 mt15">
+			   <div class="col-md-12">	
+				<div class="col-md-4">&nbsp;</div>
+              <div class="col-md-8">
+                     <input type="hidden" name="frmTempId" value="<?=$form_data->id?>" id="frmTempId">	
+					<input type="submit" name="submit" id="submit" value="Continue" class="button-sum submit-btn">
+			   </div>		
+			 </div>		
+			 </div>		
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function(){
+   $(".auto-form").validationEngine('attach', {promptPosition : "topRight:-90",validateNonVisibleFields: true,
+        updatePromptsPosition:true});
+    $('#date').datepicker({	PrevText:'p',NextText:'n'});
+
+   $('.datepicker').click(function() {
+      $(this).datepicker({dateFormat	:	'mm-dd-yy'});
+  });
+  
+   
+  
+})
+</script>
+
